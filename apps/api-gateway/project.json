@@ -1,0 +1,17 @@
+{
+  "name": "@eshop/api-gateway",
+  "projectType": "application",
+  "sourceRoot": "apps/api-gateway/src",
+  "targets": {
+    "serve": {
+      "executor": "@nx/node:execute",
+      "options": {
+        "buildTarget": "@eshop/api-gateway:build",
+        "runBuildTargetDependencies": false,
+        "watch": true,
+        "main": "apps/api-gateway/src/main.ts",
+        "tsConfig": "apps/api-gateway/tsconfig.app.json"
+      }
+    }
+  }
+}
