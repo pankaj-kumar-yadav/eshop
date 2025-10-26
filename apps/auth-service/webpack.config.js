@@ -4,7 +4,7 @@ const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   mode: process.env.NODE_ENV === "production" ? "production" : "development",
-  
+
   output: {
     path: join(__dirname, 'dist'),
     ...(process.env.NODE_ENV !== 'production' && {
